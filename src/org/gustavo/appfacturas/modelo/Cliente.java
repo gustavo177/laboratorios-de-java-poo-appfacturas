@@ -2,7 +2,7 @@ package org.gustavo.appfacturas.modelo;
 
 public class Cliente {
     private String nombre;
-    private String Apellidos;
+
     private String nif;
 
     public String getNombre() {
