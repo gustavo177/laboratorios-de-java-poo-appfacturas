@@ -57,7 +57,6 @@ public class Factura {
             this.items[indiceItems++] = item;
         }
     }
-
     public float calcularTotal() {
         float total = 0.0f;
         for (ItemFactura item : this.items) {
