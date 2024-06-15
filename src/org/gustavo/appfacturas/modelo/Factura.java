@@ -1,5 +1,6 @@
 package org.gustavo.appfacturas.modelo;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Factura {
@@ -57,6 +58,7 @@ public class Factura {
             this.items[indiceItems++] = item;
         }
     }
+
     public float calcularTotal() {
         float total = 0.0f;
         for (ItemFactura item : this.items) {
@@ -78,6 +80,30 @@ public class Factura {
                 .append("\nDescripción")
                 .append("\n")
                 .append("\n#\tNombre\t$\tCant.\tTotal\n");
+
+        SimpleDateFormat df = new SimpleDateFormat("dd 'de' MMMM, yyyy");
+        sb.append("Fecha Emisión: ")
+                .append(df.format(this.fecha))
+                .append("\n");
+
+        for(ItemFactura item: this.items){
+            if (item == null){
+                continue;
+            }
+            sb.append(item.getProducto().getCodigo())
+                    .append("\t")
+                    .append(item.getProducto().getNombre())
+                    .append("\t")
+                    .append(item.getProducto().getNombre())
+                    .append("\t")
+                    .append(item.getCantidad())
+                    .append("\t")
+                    .append(item.calcularImporte())
+                    .append("\n");
+        }
+
+        sb.append("\nGran Total")
+                .append(calcularTotal());
 
         return sb.toString();
     }
