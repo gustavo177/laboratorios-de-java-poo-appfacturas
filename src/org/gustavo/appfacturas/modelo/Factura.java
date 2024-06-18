@@ -90,6 +90,7 @@ public class Factura {
             if (item == null){
                 continue;
             }
+
             sb.append(item.getProducto().getCodigo())
                     .append("\t")
                     .append(item.getProducto().getNombre())
