@@ -105,6 +105,7 @@ public class Factura {
         sb.append("\nGran Total")
                 .append(calcularTotal());
 
+
         return sb.toString();
     }
 
