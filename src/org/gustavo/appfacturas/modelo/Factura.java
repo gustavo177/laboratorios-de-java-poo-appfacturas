@@ -102,6 +102,7 @@ public class Factura {
                     .append(item.calcularImporte())
                     .append("\n");
         }
+
         sb.append("\nGran Total")
                 .append(calcularTotal());
         return sb.toString();
