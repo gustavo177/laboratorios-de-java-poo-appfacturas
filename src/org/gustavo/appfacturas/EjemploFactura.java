@@ -43,5 +43,6 @@ public class EjemploFactura {
             s.nextLine();
         }
         System.out.println(factura);
+
     }
 }
