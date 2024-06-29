@@ -42,7 +42,6 @@ public class EjemploFactura {
             System.out.println();
             s.nextLine();
         }
-
         System.out.println(factura);
     }
 }
