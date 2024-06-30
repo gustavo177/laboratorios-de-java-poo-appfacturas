@@ -13,8 +13,7 @@ public class EjemploFactura {
 
         Scanner s = new Scanner(System.in);
         System.out.print("Ingrese una descripción de la factura: ");
-        String desc = s.nextLine();
-        Factura factura = new Factura(desc, cliente);
+        Factura factura = new Factura(s.nextLine(), cliente);
 
         Producto producto;
 //        String nombre;
