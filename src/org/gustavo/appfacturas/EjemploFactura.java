@@ -35,7 +35,6 @@ public class EjemploFactura {
             System.out.print("Ingrese la cantidad: ");
 //            cantidad = s.nextInt();
 
-//            ItemFactura item = new ItemFactura(s.nextInt(),producto);
             factura.addItemFactura(new ItemFactura(s.nextInt(),producto));
 
             System.out.println();
