@@ -13,7 +13,6 @@ public class Factura {
     private int indiceItems;
     public static final int MAX_ITEMS = 10;
     private static int ultimoFolio;
-
     public Factura(String descripcion, Cliente cliente) {
         this.descripcion = descripcion;
         this.cliente = cliente;
