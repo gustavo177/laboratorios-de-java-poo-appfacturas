@@ -20,6 +20,7 @@ public class Factura {
         this.folio = ++ultimoFolio;
         this.fecha = new Date();
     }
+
     public int getFolio() {
         return folio;
     }

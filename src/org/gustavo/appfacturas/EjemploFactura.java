@@ -16,9 +16,6 @@ public class EjemploFactura {
         Factura factura = new Factura(s.nextLine(), cliente);
 
         Producto producto;
-//        String nombre;
-//        float precio;
-//        int cantidad;
 
         System.out.println();
 
